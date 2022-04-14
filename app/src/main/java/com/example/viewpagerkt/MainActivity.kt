@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
 import com.example.demokotlinproject.adapter.ViewPagerAdapter
 import com.example.demokotlinproject.fragments.PageOneFragment
+import com.example.demokotlinproject.fragments.PageThirdFragment
 import com.example.demokotlinproject.fragments.PageTwoFragment
 import com.google.android.material.tabs.TabLayout
 
@@ -26,8 +27,9 @@ class MainActivity : AppCompatActivity(){
 
         viewPagerAdapter = ViewPagerAdapter(supportFragmentManager)
 
-        viewPagerAdapter!!.add(PageOneFragment(), "Page 1")
-        viewPagerAdapter!!.add(PageTwoFragment(), "Page 2")
+        viewPagerAdapter!!.add(PageOneFragment(), "User")
+        viewPagerAdapter!!.add(PageThirdFragment(), "Contact")
+        viewPagerAdapter!!.add(PageTwoFragment(), "Post")
 
         viewPager!!.setAdapter(viewPagerAdapter)
 
